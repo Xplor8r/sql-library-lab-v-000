@@ -34,7 +34,7 @@ def select_series_title_with_most_human_characters
   "SELECT series.title 
   FROM series
   JOIN books 
-  ON series
+  ON series.id = books.
   DESC LIMIT 1;"
 end
 
