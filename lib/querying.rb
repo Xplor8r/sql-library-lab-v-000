@@ -39,6 +39,7 @@ def select_series_title_with_most_human_characters
   ON character_books.book_id = books.id
   JOIN characters
   ON character_books.character_id = characters.id
+  ORDER BY 
   DESC LIMIT 1;"
 end
 
